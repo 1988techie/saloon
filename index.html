@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Project</title>
+    <link href="./css/desktop/index.css" rel="stylesheet" />
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div id="home" style="background-color: green; font-weight: bold;" onclick="navigatePage('home')"> Home </div>
+            <div id="pending" onclick="navigatePage('pending')"> Pending (0) </div>
+            <div id="rejected" onclick="navigatePage('rejected')"> Rejected (1)  </div>
+            <div id="approved" onclick="navigatePage('approved')"> Approved (2) </div>
+        </div>
+        <div>
+            <span>Hi Govardhan</span>
+            <span class="right">Profile</span>
+        </div>
+    </header>
+
+    <main id="app">
+        <div>
+            <h1>Upload Your Lead</h1>
+        </div>
+        <div class="upload-container">
+            <span>Front Side View | </span>
+            <input type="file" accept="image/*" onchange="previewImage(event, 1)">
+            <img id="preview1" src="" alt="Preview">
+        </div>
+        <div class="upload-container">
+            <span>Customer Side View | </span>
+            <input type="file" accept="image/*" onchange="previewImage(event, 2)">
+            <img id="preview2" src="" alt="Preview" style="max-width: 100px; display: none;">
+        </div>
+        <div class="upload-container">
+            <span>Cleanliness View | </span>
+            <input type="file" accept="image/*" onchange="previewImage(event, 3)">
+            <img id="preview3" src="" alt="Preview" style="max-width: 100px; display: none;">
+        </div>
+        <div class="upload-container">
+            <span>AC / Cooler View | </span>
+            <input type="file" accept="image/*" onchange="previewImage(event, 4)">
+            <img id="preview4" src="" alt="Preview" style="max-width: 100px; display: none;">
+        </div>
+        <div class="upload-container">
+            <span>Entrance View | </span>
+            <input type="file" accept="image/*" onchange="previewImage(event, 5)">
+            <img id="preview5" src="" alt="Preview" style="max-width: 100px; display: none;">
+        </div>
+        <button>Submit Lead</button>
+        </div>
+    </main>
+
+    <footer>
+        <a href="./pages/aboutus.html">
+            <p>About Us</p>
+        </a>
+        <a href="./pages/contactus.html">
+            <p>Contact Us</p>
+        </a>
+        <a href="./pages/termsofuse.html">
+            <p>Tems and Conditions</p>
+        </a>
+        <a href="./pages/feedback.html">
+            <p>Feedback</p>
+        </a>
+    </footer>
+</body>
+</html>

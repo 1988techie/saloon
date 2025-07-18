@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; line-height: 1.6; }
+    h1 { color: #333; }
+    label { display: block; margin-top: 10px; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+    button { margin-top: 10px; padding: 8px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Feedback</h1>
+  <p>We value your feedback! Please fill out the form below:</p>
+  <form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>How would you rate our service?</label>
+    <select name="rating">
+      <option value="">Select rating</option>
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <label>Your Feedback:</label>
+    <textarea name="feedback" rows="5" required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>

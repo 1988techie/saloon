@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+}
+
+header .left {
+    display: flex;
+    gap: 20px;
+    align-content: space-around;
+}
+
+.left > div {
+    background-color: #3383ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .right {
+    justify-content: flex-end;
+    background-color: #3383ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .greetings {
+    color: white;
+    font-size: 20px;
+    justify-content: flex-end;
+    order: -1;
+}
+
+main {
+    height: 84%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    border: grey;
+    padding: 2px;
+    overflow-y: auto;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2596be;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.upload-container > span {
+    font-size: 20px;
+    color: white;
+    width: 200px;
+}
+
+.upload-container > input[type="file"] {
+    font-size: 24px;
+    background-color: bisque;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-container > img {
+    max-width: 100px; 
+    max-height: 100px;;
+    display: none;
+}
+
+footer {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+    bottom: 0%;
+}
+
+footer > a {
+    color: white;
+    align-content: space-around;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+button {
+    padding: 14px 20px;
+    width: 100%;
+    background-color: #3383ff;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+}
